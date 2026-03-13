@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps Just Got the Biggest AI Update in a Decade — And It Already Knows You're Vegan</title>
+    <meta name="description" content="Google Maps just got its biggest AI update in a decade with Ask Maps and Immersive Navigation. Powered by Gemini, it now answers natural questions and knows your preferences. Here's what changed.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://techtonic-times.github.io/article/gemini-ai-google-maps-immersive-navigation-update-1303.html">
+    <!-- === OPEN GRAPH / FACEBOOK / LINKEDIN / WHATSAPP === -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://techtonic-times.github.io/article/gemini-ai-google-maps-immersive-navigation-update-1303.html">
+    <meta property="og:title" content="Google Maps Just Got the Biggest AI Update in a Decade — And It Already Knows You're Vegan">
+    <meta property="og:description" content="Google Maps just got its biggest AI update in a decade with Ask Maps and Immersive Navigation. Powered by Gemini, it now answers natural questions and knows your preferences. Here's what changed.">
+    <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9HFFkzAO3weVq2K-NC2Leapk6dafkj0RvtUlHS0vOdgvJ5qF-2XlhVZSFwlHlIBjbTD9u7vm9S2igQNtVBsP1mqMADCU2k41K3E_bUtInSbUvUKEaSoZhJNzB7b5DCwMfVYk1iXB7Ua4tgdxeSCnmWRnxL-gVaW14a5bDSMTP9c7BSFk/s1600/1773373304210-019ce548-ec17-7931-bea4-936438500972.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:site_name" content="TechTonic Times">
+    <meta property="og:locale" content="en_US">
+    <!-- === TWITTER CARD === -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://techtonic-times.github.io/article/gemini-ai-google-maps-immersive-navigation-update-1303.html">
+    <meta name="twitter:title" content="Google Maps Just Got the Biggest AI Update in a Decade — And It Already Knows You're Vegan">
+    <meta name="twitter:description" content="Google Maps just got its biggest AI update in a decade with Ask Maps and Immersive Navigation. Powered by Gemini, it now answers natural questions and knows your preferences. Here's what changed.">
+    <meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9HFFkzAO3weVq2K-NC2Leapk6dafkj0RvtUlHS0vOdgvJ5qF-2XlhVZSFwlHlIBjbTD9u7vm9S2igQNtVBsP1mqMADCU2k41K3E_bUtInSbUvUKEaSoZhJNzB7b5DCwMfVYk1iXB7Ua4tgdxeSCnmWRnxL-gVaW14a5bDSMTP9c7BSFk/s1600/1773373304210-019ce548-ec17-7931-bea4-936438500972.webp">
+    <meta name="twitter:creator" content="@techtonic_times">
+
+
+
+
+    
+    
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3890ESTNYT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-3890ESTNYT');
+    </script>
+    <meta name="color-scheme" content="light dark">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://techtonic-times.github.io/tt-tfavicon32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://techtonic-times.github.io/tt-tfavicon64.png">
+<link rel="icon" type="image/png" sizes="128x128" href="https://techtonic-times.github.io/tt-tfavicon128.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://techtonic-times.github.io/tt-tfavicon180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://techtonic-times.github.io/tt-tfavicon192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="https://techtonic-times.github.io/tt-tfavicon512.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- === EXTERNAL CSS LINK === -->
+    <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+    <!-- BACK TO TOP BUTTON -->
+    <div class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </div>
+    
+    <!-- NEWSLETTER MODAL -->
+    <div class="newsletter-modal" id="newsletterModal">
+        <div class="newsletter-modal-content">
+            <div class="newsletter-modal-icon">🚧</div>
+            <h3 class="newsletter-modal-title">Newsletter Under Development</h3>
+            <p class="newsletter-modal-message">
+                Our newsletter system is currently being upgraded with enhanced features.
+                <br><br>
+                In the meantime, you can follow us on social media for the latest updates.
+            </p>
+            <button class="newsletter-modal-close" id="newsletterModalClose">Got it!</button>
+        </div>
+    </div>
+    
+    <!-- SCROLL INDICATOR -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+    
+    <!-- THEME TOGGLE BUTTON -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+            <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"/>
+            <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"/>
+            <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"/>
+            <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <span class="sr-only">Toggle theme</span>
+    </button>
+    
+    <!-- MENU TOGGLE BUTTON -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <!-- MENU CARD -->
+    <div class="menu-card" id="menuCard">
+        <div class="menu-header">
+            <h3>Menu</h3>
+            <button class="menu-close" id="menuClose" aria-label="Close menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="https://techtonic-times.github.io/article/" class="menu-link">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="https://www.techtontic-times.com/community" class="menu-link">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    Community
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="https://www.techtontic-times.com/about" class="menu-link">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="16" x2="12" y2="12"/>
+                        <line x1="12" y1="8" x2="12.01" y2="8"/>
+                    </svg>
+                    About Us
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="https://www.techtontic-times.com/contact" class="menu-link">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- BACKDROP FOR MENU -->
+    <div class="backdrop" id="backdrop"></div>
+    
+    <!-- BREADCRUMB -->
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ul>
+            <li><a href="https://techtonic-times.github.io/article/"><i class="fas fa-home"></i> Home</a></li>
+            <!-- UPDATE PER PAGE: Category Link -->
+            <li><a href="https://techtonic-times.github.io/article/?category=ai">AI & Data</a></li>
+            <!-- UPDATE PER PAGE: Current Page Title (Auto-filled by JS) -->
+            <li aria-current="page"></li>
+        </ul>
+    </nav>
+    
+    <!-- HEADER WITH LOGO -->
+    <header>
+        <div class="logo-container">
+            <a href="https://techtonic-times.github.io/home/">
+                <img
+                    src="https://techtonic-times.github.io/home/techtonic-logo.webp"
+                    alt="TechTonic Times Logo"
+                    class="logo"
+                    loading="lazy"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                    onload="this.classList.add('loaded')"
+                >
+                <span style="display:none; color:white; font-size:1.5rem; font-weight:bold;">TechTonic Times</span>
+            </a>
+            <span class="logo-tagline">Feel the Pulse of Progress</span>
+        </div>
+    </header>
+    
+    <!-- ARTICLE TAG (BADGE) -->
+    <!-- UPDATE PER PAGE: Category Badge -->
+    <div class="article-tag">
+        <a href="https://techtonic-times.github.io/article/?category=ai" class="article-badge" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem;">
+            Artificial Intelligence & Data
+        </a>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+  <!-- ARTICLE MAIN TITLE (H1) -->
+    <div class="article-main-title">
+        <!-- UPDATE PER PAGE: Article Title -->
+        <h1 id="articleMainTitle">Google Maps Just Got the Biggest AI Update in a Decade — And It Already Knows You're Vegan</h1>
+    </div>
+    
+    <!-- ARTICLE SECTION CARD -->
+    <section class="article-section fade-up-section" id="mainArticleSection">
+        <div class="article-header">
+            <!-- ARTICLE META -->
+            <div class="article-meta">
+                <div class="article-date">
+                    <i class="fas fa-calendar-alt meta-icon"></i>
+                    <!-- UPDATE PER PAGE: Publish Date (UTC) -->
+                    <span id="publish-time" data-utc="2026-03-13T04:00:00Z"></span>
+                    <span class="meta-separator">•</span>
+                    <i class="fas fa-clock meta-icon"></i>
+                    <span>5 min read</span>
+                </div>
+                <div class="article-author">
+                    <i class="fas fa-user meta-icon"></i>
+                    <!-- UPDATE PER PAGE: Author Name -->
+                    <span>Mushfikur Riad</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="article-single-content" id="articleContent">
+            <!-- UPDATE PER PAGE: Article Content -->
+            <p>You know that friend who always knows exactly where to go? The one you text when you're standing on a street corner, hungry, slightly lost, and completely undecided? The one who responds in thirty seconds with a specific place, a specific reason, and somehow already knows you don't eat meat? Google just decided to become that friend. This week, Maps got two major new features — Ask Maps and Immersive Navigation — both powered by Gemini AI. And together, they don't just upgrade the app. They change what the app fundamentally is.</p>
+            
+            <div class="toolbar-container">
+                <div id="toolbar" class="toolbar-collapsed">
+                    <div id="iconGroup" class="toolbar-icons">
+                        <button id="iconTextSize" class="toolbar-icon" title="Text size"><i class="fas fa-text-height"></i></button>
+                        <button id="iconLike" class="toolbar-icon" title="React"><span id="likeEmoji"><i class="far fa-heart"></i></span></button>
+                        <button id="iconShare" class="toolbar-icon" title="Share"><i class="fa-solid fa-share"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- IMAGE + KEY INSIGHTS -->
+            <div class="image-keypoints-container">
+                <div class="image-container">
+                    <!-- UPDATE PER PAGE: Main Image -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHlPwMfPtXP7rWpnjqgyQPC6fT_3b8YeJnO_zliSr_ezLQhehBpWzk23bIvNxw5XBAYcJ9fOxq_f3ndo4e8r6ozp03QNECrRdyzWpmO8u6DdHQM6-69Mp1va3bekCWeIksC9KsXnEuuiwtJqJ3hyphenhyphen_nbgboRldXcXCCyd5jtk-n-9lY1o8/s1600/1772727062462-019cbec3-bc7d-7d93-9730-8962dfe66942.webp"
+                         alt=""
+                         class="square-image"
+                         loading="lazy"
+                         onload="this.classList.add('loaded')">
+                </div>
+                <div class="keypoints-container">
+                    <h3 class="keypoints-title">Key Insights You Should never miss</h3>
+                    <ul class="keypoints-list">
+                        <!-- UPDATE PER PAGE: Key Points -->
+                        <li class="keypoint-item">
+                            <div class="keypoint-title">Ask Maps Enables Conversational Discovery.</div>
+                            <div class="keypoint-description">Users can now ask complex, natural language questions like finding a charging spot without long coffee lines or tennis courts with lights, receiving personalized answers powered by Gemini AI across 300 million places.</div>
+                        </li>
+                        <li class="keypoint-item">
+                            <div class="keypoint-title">Hyper-Personalization Without Explicit Input.</div>
+                            <div class="keypoint-description">The AI automatically factors in your search history, saved places, and preferences — like vegan restaurants — to deliver tailored recommendations without users needing to specify every detail.</div>
+                        </li>
+                        <li class="keypoint-item">
+                            <div class="keypoint-title">Immersive Navigation Transforms Driving.</div>
+                            <div class="keypoint-description">A complete visual overhaul with 3D buildings, transparent structures, natural voice guidance, and real-time route trade-off explanations marks the biggest navigation upgrade in over a decade.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p>Here's the thing about the way people actually use maps. Nobody thinks in keywords. You don't open your phone and type "vegan restaurant open now seating for four." You think: we need somewhere cozy, not too loud, my friends are coming from across town, and I'm not eating meat. You have a whole situation in your head. The app has never been able to handle that — until now.</p>
+            
+            <h2>Ask Maps: Conversation Meets Navigation</h2>
+            <p>Ask Maps is a conversational AI feature built directly into Google Maps. You type — or eventually speak — exactly what's on your mind. "My phone is dying, where can I charge it without waiting forever for a coffee?" or "Is there a tennis court with lights on I can use tonight?" Real questions. Human questions. The kind that used to require either local knowledge or a very patient Google search.</p>
+            <p>Maps takes those questions, runs them through Gemini, cross-references hundreds of millions of real-world places, and comes back with actual, useful answers. Not a list of loosely related businesses. An answer. The feature draws from over 300 million places and 500 million contributor reviews to build responses that feel genuinely helpful.</p>
+            
+            <div class="highlight-box">
+                <h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    In Simple Terms — How Ask Maps Works
+                </h4>
+                <p>Think of it like texting that friend who knows every corner of your city. Instead of searching "coffee shop near me," you simply explain your situation — and Maps understands the context, urgency, and personal preferences to deliver exactly what you need.</p>
+            </div>
+            
+            <h2>The Personalization That Already Knows You</h2>
+            <p>So here's where it gets interesting. Ask Maps doesn't just answer your question — it answers your question for you specifically. Say you ask it to recommend somewhere for dinner with friends after work. A nice table for four, somewhere cozy, around 7pm. You didn't mention anything about your diet. But your Google Maps account has a quiet history — the vegan places you've saved, the plant-based restaurants you've searched late on weeknights. Ask Maps already knows. It factors all of that in and surfaces options that fit without you having to explain yourself.</p>
+            <p>That's the hyper-personalized place discovery piece of this update, and it's genuinely impressive. It's also the moment where some people will think "wow, that's convenient" and others will think "wait, it knows that about me?" Both reactions are valid. Either way — it works. The AI uses signals from your previous searches, saved locations, and favorited spots to tailor every recommendation.</p>
+            
+            <h2>Immersive Navigation: The Drive Is Different Now</h2>
+            <p>Picture this. You're navigating somewhere new, there's a complex highway interchange coming up, and Maps is showing you two alternate routes. Old Maps would show you a blue line and a grey line with a time stamp. New Maps tells you: this one's a few minutes longer but traffic is clear, that one's faster but there's a toll. Here are the trade-offs. You decide.</p>
+            <p>Routes explained by AI sounds like a minor feature on paper. But there's something quietly important about an app that stops just optimizing and starts actually communicating. It respects that you might have a preference. That you might care about more than raw speed. And when something unexpected happens mid-drive — a crash, road construction, a sudden slowdown — Maps will now flag it in real time, pulling data from both its own community and Waze. Two of the biggest crowd-sourced road networks, feeding one alert system.</p>
+            
+            <div class="highlight-box">
+                <h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Think of It Like This — The Visual Revolution
+                </h4>
+                <p>Imagine driving through a video game world that looks exactly like your real surroundings. Buildings render in 3D, overpasses cast realistic shadows, and the map actually helps you see through structures to know what's coming next. That's Immersive Navigation.</p>
+            </div>
+            
+            <p>The driving view is now genuinely 3D. Buildings render as you approach them. Overpasses look like overpasses. Terrain shifts as the road shifts. Lane markings, crosswalks, traffic lights, stop signs — all visible, all contextual. When you're approaching a messy intersection or a tricky exit, buildings actually go transparent so you can see through to what's beyond them. Smart zooms pull back to give you a wider view of what's ahead when you need it.</p>
+            
+            <!-- DYNAMIC LINK CONTAINER (Auto-filled by JS from Related Articles) -->
+            <div id="dynamic-link-container"></div>
+            
+            <p>It sounds like a cosmetic change. It isn't. The number of times bad visual context has caused someone to miss a lane or overshoot a turn — this is the fix for that. Google Maps VP Miriam Daniel said the goal was to take the guesswork out of trips entirely. Looking at what launched, she wasn't being modest.</p>
+            
+            <h2>A Voice That Finally Sounds Human</h2>
+            <p>This one's small but worth mentioning, because it's one of those changes you notice immediately once you hear it. The voice navigation has been rewritten. Not just re-recorded — rewritten. Instead of "In 500 feet, take the exit," you now hear something like: "Go past this exit and take the next one for Illinois 43 South." That's a sentence a person would say. It has context. It has intention. It tells you what you're doing and why, rather than rattling off a distance measurement and leaving you to interpret it at speed.</p>
+            <p>Street View is layered in too now, so the app can tell you to turn at the gas station or the big building on the corner — the way any local would give directions — instead of relying purely on numbers. Before you even get to your destination, you can preview your destination through Street View, scope out parking, and figure out exactly where the entrance is. As you approach, Maps will highlight the building's entrance, nearby parking, and which side of the street to be on.</p>
+            
+            <h2>Trip Planning Reimagined</h2>
+            <p>One more thing worth knowing. Ask Maps handles full trip planning too, not just quick local searches. Heading somewhere like the Grand Canyon with a few stops along the way? Tell Maps where you're going and ask what's worth seeing. It'll pull directions, ETAs, and real user tips — the kind of stuff that usually lives buried in a travel blog or a two-year-old Reddit post.</p>
+            <p>That last part matters more than it sounds. Arrival — actually finding the building, figuring out where to park, knowing which door to walk into — is the part GPS has always dropped the ball on. This finally addresses it. You can preview your destination's surroundings, get parking recommendations, and see exactly where to enter before you even leave.</p>
+            
+            <h2>Where This Leaves Us</h2>
+            <p>Ask Maps is live right now in the US and India on iOS and Android. Immersive Navigation is rolling out across the US today, heading to CarPlay, Android Auto, and Google built-in vehicles over the coming months. Desktop support is coming for Ask Maps too.</p>
+            <p>Google Maps is used by over a billion people every month. It's been a reliable, functional, largely unchanged experience for most of that time. What launched this week isn't a tweak. It's a rethink — of how you find places, how you navigate to them, and how the app understands who you are while doing both. That friend who always knows where to go? They just got a lot smarter.</p>
+            
+            <!-- HASHTAGS -->
+            <div class="hashtag-list">
+                <span class="hashtag-item"><i class="fas fa-hashtag"></i> GoogleMaps</span>
+                <span class="hashtag-item"><i class="fas fa-hashtag"></i> AskMaps</span>
+                <span class="hashtag-item"><i class="fas fa-hashtag"></i> GeminiAI</span>
+                <span class="hashtag-item"><i class="fas fa-hashtag"></i> ImmersiveNavigation</span>
+                <span class="hashtag-item"><i class="fas fa-hashtag"></i> AIUpdate</span>
+                <span class="hashtag-item"><i class="fas fa-hashtag"></i> Navigation</span>
+            </div>
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- ===== POST-ARTICLE SECTIONS ===== -->
+    <!-- SHARE SECTION -->
+    <div class="post-article-section fade-up-section" id="shareSection">
+        <h2 class="section-title">Spread the word</h2>
+        <div class="share-section">
+            <div class="share-icons">
+                <button class="share-icon-btn" data-platform="facebook"><i class="fab fa-facebook-f"></i></button>
+                <button class="share-icon-btn" data-platform="x">
+                    <svg class="x-logo-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                    </svg>
+                </button>
+                <button class="share-icon-btn" data-platform="linkedin"><i class="fab fa-linkedin-in"></i></button>
+                <button class="share-icon-btn" data-platform="whatsapp"><i class="fab fa-whatsapp"></i></button>
+                <button class="share-icon-btn" data-platform="telegram"><i class="fab fa-telegram-plane"></i></button>
+                <button class="share-icon-btn" data-platform="reddit"><i class="fab fa-reddit-alien"></i></button>
+                <button class="share-icon-btn" data-platform="pinterest"><i class="fab fa-pinterest"></i></button>
+                <button class="share-icon-btn" data-platform="email"><i class="fas fa-envelope"></i></button>
+                <button class="share-icon-btn" data-platform="hackernews"><i class="fab fa-hacker-news"></i></button>
+                <button class="share-icon-btn" id="copyLinkBtn2"><i class="fas fa-copy"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <!-- RELATED ARTICLES SECTION -->
+    <div class="post-article-section fade-up-section" id="relatedSection">
+        <div class="section-header">
+            <h2 class="section-title">Latest Article</h2>
+            <a href="https://techtonic-times.github.io/article/" class="view-all-btn">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="related-articles-container" id="relatedArticlesContainer">
+            
+            
+            
+            
+            
+            <!-- UPDATE PER PAGE: Related Articles (Used for Dynamic Link & Display) -->
+            
+             <div class="related-article-card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRMW2FzCTKR9b8e-n7Y8H9AjjgBut0qGhxhTMUfaHqL7-CFmtxuiqLMlbI15363gv6UFXuOydn-Fedo3d0sO3XREsN65-xG1ulkasHFbgGh2cwTLahv_a7SQFnGgtoRHFi38FDBbjdg-X0IoL7nyZ9Gnnr1TIa-pUFutJXUG8IAWxYK7s/s1600/1773328604488-019ce29e-606c-72d7-860e-da70f783925c.webp"
+                     alt="Meta Just Bought the AI Agent Social Network That Went Viral for All the Wrong Reasons"
+                     class="related-article-image"
+                     loading="lazy">
+                <div class="related-article-content">
+                    <div class="related-article-title">Meta Just Bought the AI Agent Social Network That Went Viral for All the Wrong Reasons</div>
+                    <div class="related-article-description">Meta bought Moltbook, the AI agent social network built on fake bots and security flaws. Here's why the 'agent graph' matters for the future of artificial intelligence.</div>
+                    <div class="related-article-footer">
+                        <span class="related-timestamp"><i class="fa-regular fa-calendar"></i> Mar 12, 2026</span>
+                        <a href="https://techtonic-times.github.io/article/meta-acquires-moltbook-ai-agent-network-1203.html" class="related-read-btn" target="_blank">Read Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            <div class="related-article-card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5xsohYAFJq6Ipxa7Y92gCqwjcpoU7w-VwSABEkRnZ5l3WO02wh90i-cFsZcEnx1saFY3i2ZKF9lDVEFkgnmhyphenhyphenay5AiCU54v5l7uS0-5ZGC5qHZghXtvXaBZ-9p4hGONFOD7f9WUjStmDgcnFVKA71-11XlVSpbuOxbzQGdmdN7XRe0XQ/s1600/1773307598086-019ce15e-00e8-71ad-ab69-a86b74e763a4.webp"
+                     alt="Scientists Found a Cosmic Gold Factory Hidden Inside a 600,000-Light-Year Gas Stream — And It Breaks Every Rule We Knew"
+                     class="related-article-image"
+                     loading="lazy">
+                <div class="related-article-content">
+                    <div class="related-article-title">Scientists Found a Cosmic Gold Factory Hidden Inside a 600,000-Light-Year Gas Stream — And It Breaks Every Rule We Knew</div>
+                    <div class="related-article-description">Scientists discovered a neutron star collision inside a 600,000-light-year gas stream, revealing hidden cosmic gold factories that break every astronomical rule we knew</div>
+                    <div class="related-article-footer">
+                        <span class="related-timestamp"><i class="fa-regular fa-calendar"></i> Mar 12, 2026</span>
+                        <a href="https://techtonic-times.github.io/article/neutron-star-collision-cosmic-gold-factory-2603.html" class="related-read-btn" target="_blank">Read Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            <div class="related-article-card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguPX9Nx1Mat2WaOniLIMB-vc9WQ3sDlw0d1JIibrgQ4k_XWLfL2gCZHFZR3Rhh02eauiKwuAPy02Waq0ChHTvX2THkZt64P2ervOD6um0ln-KOQRKaAdHrjMTEzq4YcNE4iSxLB72AmodxNQeAVDPeheEfmeSKof6u46rmLG4LGuVx2jI/s1600/1773289533713-019ce04a-2571-7aa5-81c2-3817da0db3e9.webp"
+                     alt="45,000 Tech Jobs Wiped Out — And AI Is Just Getting Started With Your Career"
+                     class="related-article-image"
+                     loading="lazy">
+                <div class="related-article-content">
+                    <div class="related-article-title">45,000 Tech Jobs Wiped Out — And AI Is Just Getting Started With Your Career</div>
+                    <div class="related-article-description">Tech jobs are vanishing as AI automation surges — 45,000+ layoffs already in 2026. From Seattle to Sydney, artificial intelligence is reshaping work forever.</div>
+                    <div class="related-article-footer">
+                        <span class="related-timestamp"><i class="fa-regular fa-calendar"></i> Mar 12, 2026</span>
+                        <a href="https://techtonic-times.github.io/article/artificial-intelligence-replacing-tech-workers-1203.html" class="related-read-btn" target="_blank">Read Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+           
+            
+            
+      
+    
+       
+            
+            
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+   
+    
+    <!-- FAQ SECTION -->
+    
+ 
+ 
+ <div class="post-article-section fade-up-section" id="faqSection">
+<h2 class="section-title">Frequently Asked Questions</h2>
+<div class="faq-container" id="faqContainer">
+    <!-- UPDATE PER PAGE: FAQ Items -->
+    <div class="faq-item">
+        <div class="faq-question">What is Ask Maps? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">
+            Ask Maps is a conversational AI feature in Google Maps powered by Gemini. You can ask natural questions like "where can I charge my phone without waiting forever for coffee?" and it returns actual answers, not just business lists—drawing from 300 million places and 500 million reviews.
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">How does it know my preferences? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">
+            It analyzes your Maps history—saved places, past searches, late-night queries—to personalize recommendations automatically. Ask for dinner spots and it may suggest vegan options without you mentioning diet, because it already learned that from your patterns.
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">What's Immersive Navigation? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">
+            A complete 3D visual overhaul. Buildings render realistically, overpasses cast shadows, and structures go transparent at tricky intersections so you can see what's ahead. AI also explains route trade-offs in plain language, not just time estimates.
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">What's new with voice directions? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">
+            Voice guidance now sounds human. Instead of "In 500 feet, take the exit," you hear "Go past this exit and take the next one for Illinois 43 South." It references landmarks like locals do—"turn at the gas station"—using integrated Street View data.
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">Where are these features available? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">
+            Ask Maps is live now in the US and India on iOS and Android. Immersive Navigation is rolling out across the US today, coming to CarPlay, Android Auto, and Google built-in vehicles soon. Desktop support for Ask Maps is also planned.
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- FOOTER SECTION -->
+    <div class="footer-container">
+        <div class="footer-top-row">
+            <div class="footer-card">
+                <div class="mb-3 px-4">
+                    <span class="feature-badge text-xs font-medium px-3 py-1 rounded-full text-[#12ABB0] inline-flex items-center gap-1 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
+                        </svg>
+                        FOLLOW US
+                    </span>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-4 px-4">
+                    Join Our Science & Tech Community
+                </h3>
+                <div class="grid grid-cols-5 gap-3 mb-5 px-4">
+                    <a href="https://facebook.com" class="social-icon facebook-bg group" aria-label="Facebook" title="Facebook">
+                        <svg width="28px" height="28px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="white" d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"/>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/techtonic_times" class="social-icon twitter-bg group" aria-label="X (Twitter)" title="X (Twitter)">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" class="social-icon instagram-bg group" aria-label="Instagram" title="Instagram">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="white" d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.074-4.947c-.061-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.45-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" class="social-icon linkedin-bg group" aria-label="LinkedIn" title="LinkedIn">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" class="social-icon youtube-bg group" aria-label="YouTube" title="YouTube">
+                        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505a3.017 3.017 0 00-2.122 2.136C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="mt-5 space-y-2 px-4">
+                    <div class="flex items-center gap-2 text-sm">
+                        <svg class="w-4 h-4 text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span class="text-gray-300">Daily tech news & updates</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm">
+                        <svg class="w-4 h-4 text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span class="text-gray-300">Exclusive behind-the-scenes content</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm">
+                        <svg class="w-4 h-4 text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span class="text-gray-300">Live Q&A sessions with tech experts</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm">
+                        <svg class="w-4 h-4 text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span class="text-gray-300">Community discussions & tech debates</span>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-300 mt-4 px-4">
+                    Connect with us for daily tech updates and discussions
+                </p>
+            </div>
+            
+            <div class="footer-card">
+                <div class="mb-2 px-4">
+                    <span class="feature-badge text-xs font-medium px-3 py-1 rounded-full text-[#12ABB0] inline-flex items-center gap-1 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        NEWSLETTER
+                    </span>
+                </div>
+                <h3 class="text-white font-bold text-xl mb-3 px-4">
+                    Stay Ahead in Tech
+                </h3>
+                <p class="text-gray-300 mb-4 text-sm px-4">
+                    Get the latest tech news delivered directly to your inbox
+                </p>
+                <form class="space-y-4 px-4" id="newsletterForm">
+                    <div class="flex flex-col gap-3">
+                        <input
+                            type="email"
+                            placeholder="your.email@example.com"
+                            required
+                            class="newsletter-input flex-grow px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#12ABB0]"
+                        >
+                        <button
+                            type="submit"
+                            class="newsletter-btn px-6 py-3 rounded-lg font-medium text-white"
+                        >
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-5 space-y-2 px-4">
+                    <div class="flex items-center gap-2 text-sm">
+                        <svg class="w-4 h-4 text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span class="text-gray-300">Daily tech news digest</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm">
+                        <svg class="w-4 h-4 text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span class="text-gray-300">Exclusive analysis & insights</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm">
+                        <svg class="w-4 h-4 text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span class="text-gray-300">Weekly roundup of top stories</span>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 mt-4 px-4">
+                    We respect your privacy. No spam. Unsubscribe anytime.
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-card quick-links-card">
+            <h4 class="text-white font-medium mb-4 px-4">Quick Links</h4>
+            <div class="quick-links-grid px-4">
+                <div>
+                    <h5 class="text-sm font-semibold text-[#12ABB0] mb-2 flex items-center gap-1">
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Information
+                    </h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#12ABB0] transition-colors flex items-center gap-2 group">
+                            <svg class="w-3 h-3 text-gray-400 group-hover:text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                            </svg>
+                            <span class="text-gray-300">About Us</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-[#12ABB0] transition-colors flex items-center gap-2 group">
+                            <svg class="w-3 h-3 text-gray-400 group-hover:text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                            <span class="text-gray-300">Categories</span>
+                        </a></li>
+                        <li><a href="https://techtonic-times.github.io/home/archive.html" class="hover:text-[#12ABB0] transition-colors flex items-center gap-2 group">
+                            <svg class="w-3 h-3 text-gray-400 group-hover:text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/>
+                            </svg>
+                            <span class="text-gray-300">Archive</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-[#12ABB0] transition-colors flex items-center gap-2 group">
+                            <svg class="w-3 h-3 text-gray-400 group-hover:text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span class="text-gray-300">FAQs</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-[#12ABB0] transition-colors flex items-center gap-2 group">
+                            <svg class="w-3 h-3 text-gray-400 group-hover:text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span class="text-gray-300">Contact Us</span>
+                        </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-sm font-semibold text-[#12ABB0] mb-2 flex items-center gap-1">
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        Legal
+                    </h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#12ABB0] transition-colors flex items-center gap-2 group">
+                            <svg class="w-3 h-3 text-gray-400 group-hover:text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                            <span class="text-gray-300">Privacy Policy</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-[#12ABB0] transition-colors flex items-center gap-2 group">
+                            <svg class="w-3 h-3 text-gray-400 group-hover:text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                            <span class="text-gray-300">T & C</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-[#12ABB0] transition-colors flex items-center gap-2 group">
+                            <svg class="w-3 h-3 text-gray-400 group-hover:text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.346 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                            </svg>
+                            <span class="text-gray-300">Disclaimer</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-[#12ABB0] transition-colors flex items-center gap-2 group">
+                            <svg class="w-3 h-3 text-gray-400 group-hover:text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v14a2 2 0 002 2H16a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                            </svg>
+                            <span class="text-gray-300">Write for Us</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-[#12ABB0] transition-colors flex items-center gap-2 group">
+                            <svg class="w-3 h-3 text-gray-400 group-hover:text-[#12ABB0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/>
+                            </svg>
+                            <span class="text-gray-300">Advertise with Us</span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- BOTTOM FOOTER -->
+    <footer class="bg-[#0a0e1a] text-gray-400 py-6 text-center" style="background-color: #0a0e1a !important;">
+        <div class="container-max-width" style="max-width: 1400px; margin: 0 auto;">
+            <div class="mb-3">
+                <a href="#" class="text-xl font-bold tracking-tight text-white inline-block">
+                    <span class="gradient-text">TechTonic</span><span class="text-white"> Times</span>
+                </a>
+            </div>
+            <p class="text-sm">&copy; 2026 TechTonic Times. All rights reserved. |
+                <a href="#" class="hover:text-[#12ABB0]">Privacy Policy</a> |
+                <a href="#" class="hover:text-[#12ABB0]">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Font Awesome JS (Required for icons) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- === EXTERNAL JS LINK === -->
+    <script src="script.js?v=1" defer></script>
+</body>
+</html>
