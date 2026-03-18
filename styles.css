@@ -2422,6 +2422,13 @@ img:not([loading]) {
 .dark-mode .related-timestamp i {
     color: #12ABB0 !important;  /* Keep icon teal for contrast */
 }
+/* === FIX: Dark mode hover timestamp color === */
+.dark-mode .related-article-card:hover .related-timestamp {
+color: white !important;
+}
+.dark-mode .related-article-card:hover .related-timestamp i {
+color: white !important;
+}
 
 .related-timestamp i {
     font-size: 0.65rem;
