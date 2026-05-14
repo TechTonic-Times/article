@@ -694,7 +694,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Click on author name in article meta
     const authorLinks = document.querySelectorAll('.author-link, .article-author span');
     authorLinks.forEach(link => {
-        if (link.textContent.includes('Mushfikur Riad') || link.classList.contains('author-link')) {
+        if (link.textContent.includes('Mir Mushfikur Rahman') || link.classList.contains('author-link')) {
             link.style.cursor = 'pointer';
             link.addEventListener('click', (e) => {
                 e.preventDefault();
