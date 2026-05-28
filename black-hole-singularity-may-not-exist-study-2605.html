@@ -2,6 +2,7 @@
 <html lang="en" class="light">
 <head>
     <meta charset="UTF-8">
+    <style>body{background:#0E7B7F;color:#fff}.article-main-title h1{font-size:2.5rem;color:#fff;text-align:center}header,.breadcrumb{opacity:1}</style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Black Hole Singularity May Not Exist, Study Finds</title>
@@ -208,7 +209,8 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- === EXTERNAL CSS LINK === -->
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="styles.css"></noscript>
 </head>
 <body>
     <!-- BACK TO TOP BUTTON -->
@@ -417,9 +419,12 @@
             <div class="image-container">
                 <!-- UPDATE PER PAGE: Main Image -->
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibCqUgyX-dTyZK3Wqpr3Um0Fk_Fk1fAXBklTjtoWJt_QlgeWyWG17dn3SZxeFa5g-i0MPiN5FRKuJPUCpukdSTJu5eau_-TslC_IE-Vx3cJWpoYvRYI7qx7HhAOAwN3yLRzysUNyB32DzFLMkPXuEBbRa97grY8IMCE5KDknOQySpohfI/s1600/black-hole-missing-singularity.webp"
-                     alt="Black hole illustration representing quantum gravity and space-time"
+                     alt=""
                      class="square-image"
+                     fetchpriority="high" 
                      loading="eager"
+                     width="800" 
+                     height="800"
                      onload="this.classList.add('loaded')">
             </div>
             <div class="keypoints-container">
@@ -910,6 +915,6 @@
     <!-- Font Awesome JS (Required for icons) -->
    
     <!-- === EXTERNAL JS LINK === -->
-    <script src="script.js?v=1" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
